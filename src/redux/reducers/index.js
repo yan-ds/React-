@@ -4,15 +4,18 @@
 import { combineReducers } from 'redux'
 
 import user from './user'
-import xxx from './xxx'
+import headerTitle from './header-title'
+import categorys from './categorys'
 /* 
 管理的总state的结构:
   {
     user: {},
-    xxx: 'atguigu'
+    headerTitle: '首页',
+    categorys: []
   }
 */
 export default combineReducers({
   user,
-  xxx
+  headerTitle,
+  categorys
 })
